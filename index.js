@@ -1,20 +1,15 @@
-var fullUrl = 'http://universities.hipolabs.com/search?country=morocco';
-var express = require('express');
-var app = express();
+const express = require("express");
+const app = express();
+const axios = require('axios')
 
-app.get('/country', function(req, res) {
-    app.use((req, res, next) => {
-        const path = url.parse(req.url).path;
-        console.log(path)
-    });
-
+app.get("/", (req, res) => {
+    axios.get('http://universities.hipolabs.com/search?country=morocco')
+        .then(response => {
+            // handle success
+            console.log(response)
+            res.send(response.data)
+        })
 });
-
-// app.use((req, res, next) => {
-//     const path = url.parse(req.url).path;
-//     console.log(path)
-// });
-
 app.listen(2020, () => {
     console.log('serveur')
 })

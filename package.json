@@ -1,0 +1,22 @@
+{
+  "name": "node-express-api-simple",
+  "version": "1.0.0",
+  "description": "a simple node js api simple project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoulmanHamza/api_js_country.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoulmanHamza/api_js_country/issues"
+  },
+  "homepage": "https://github.com/BoulmanHamza/api_js_country#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

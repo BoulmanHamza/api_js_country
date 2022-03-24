@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/BoulmanHamza/api_js_country#readme",
   "dependencies": {
+    "axios": "^0.26.1",
     "express": "^4.17.3"
   }
 }

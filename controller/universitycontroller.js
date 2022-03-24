@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
 const universityservice = require('../service/universityservice');
+app.set("view engine","ejs");
 
-app.get("/university", (req, res) => {
+app.get("/universities", (req, res) => {
     universityservice.getUniversity().then(response => {
-        res.send(response.data);
+        res.render("index",{universities: response.data})
     });
 });
 

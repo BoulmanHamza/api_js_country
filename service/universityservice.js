@@ -1,8 +1,10 @@
+const express = require("express");
+const app = express();
 const axios = require('axios')
 const universityApiBaseUrl = 'http://universities.hipolabs.com/search'
 
-function getUniversity() {
+function getAllUniversity() {
     return axios.get(universityApiBaseUrl);
 }
 
-module.exports = { getUniversity }
+module.exports = { getAllUniversity }
